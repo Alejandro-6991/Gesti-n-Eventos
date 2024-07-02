@@ -1,0 +1,103 @@
+#root {
+  max-width: 5000px;
+  margin: 0 auto;
+  padding: 4rem;
+  text-align: center;
+}
+
+
+
+
+.menu-navbar {
+  background-color: lightblue;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end; 
+  padding-right: 80px; 
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-size: 1.8rem;
+ 
+}
+
+.menu-list li {
+  margin-left: 40px; 
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  border-bottom: 3px solid black;
+}
+
+.menu-list li a:hover {
+  background-color: lightgray; 
+  
+}
+
+.notas {
+  width: 500px ;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  text-align: left; 
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+}
+
+.datos label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.datos input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center; 
+}
+
+.inicio h1 {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 30px; 
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+

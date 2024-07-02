@@ -1,0 +1,106 @@
+/// TODO: Importar los hooks necesarios de React
+import React, { /* useState, useEffect, useReducer, useContext */ } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
+
+// TODO: Crear un contexto global utilizando useContext
+
+//TODO: Crear la función reducer para administrar el estado con los eventos 
+function reducer(state, action) {
+    switch (action.type) {
+        case //TODO: crear lógica para el caso de creación de un evento 
+
+////////////////
+
+        /*case //TODO: crear lógica para el caso de obtener todos los eventos
+
+        case //TODO: crear lógica para el caso de obtener un solo evento
+
+        case //TODO: crear lógica para el caso de editar un evento 
+
+        case //TODO: crear lógica para el caso de eliminación de un evento 
+
+        //TODO: crear la lógica para el caso default 
+
+    }
+}
+
+// TODO: Crear un componente reutilizable, por ejemplo, un botón personalizado
+
+//TODO: Utilizar componentes estilizados para la estilización de los componentes
+
+
+function App() {
+    // TODO: Utilizar useEffect para manejar el ciclo de vida del componente para guardar y obtener los eventos en el localStorage
+
+    // TODO: Implementar useReducer para manejar una acción específica, por ejemplo, actualizar un estado
+
+    //TODO: preveé a tu aplicación del estado y la función dispatch de useReducer usando el contexto
+    return (
+        <ChakraProvider>
+            <Router>
+                <Routes>
+                    {/* TODO: Configurar rutas estáticas y dinámicas utilizando Route */}
+                </Routes>
+            </Router>
+        </ChakraProvider>
+    );
+}
+
+
+export default App;
+
+
+
+
+const CreateEvent = () => {
+
+    const [reservation, setReservation] = useState({
+        id: '',
+        name: '',
+        date: '',
+        place: '',
+        numberOfPeople: 0,
+        theme: '',
+    });
+    //TODO: crear la lógica para almacenar el nuevo evento en el estado con preveyente de useReducer
+
+    //TODO: crear formulario para la creación del evento
+    return <div>Create Event Form</div>;
+};
+
+export default CreateEvent;
+
+
+
+const EventList = () => {
+
+    //TODO: obtener la lista de eventos provenientes del estado proveyente de useReducer
+
+    //TODO: mostrar la lista de eventos con componente estilizados provenientes de una libreria UI
+  return <div>List of Events</div>;
+};
+
+export default EventList;
+
+
+
+import { useParams } from 'react-router-dom';
+
+const EventDetails = () => {
+  const { id } = useParams();
+
+  //TODO: crear el formulario para editar la información del evento 
+  //TODO: obtener la información del evento usando las acciones que tienes presentes en la función reducer
+  return <div>Details of Event {id}</div>;
+};
+
+export default EventDetails;
+
+
+
+
+const HomePage = () => {
+
+  return <div>Welcome to the Event Management System</div>;
+};//
